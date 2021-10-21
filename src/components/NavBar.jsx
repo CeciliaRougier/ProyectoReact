@@ -1,4 +1,4 @@
-
+import CartWidget from "./CartWidget.js";
 
 //Escribo la función NavBar
 function NavBar() {
@@ -12,6 +12,7 @@ function NavBar() {
                 <li className="btnNBItem"><a href="./components/productos.js">Productos</a></li>
                 <li className="btnNBItem"><a href="./components/contacto.js">Contacto</a></li>
             </ul>
+            <CartWidget/>
 
         </nav>
     );

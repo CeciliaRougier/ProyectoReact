@@ -24,6 +24,7 @@ nav {
     justify-content: space-between;
     margin: auto;
     padding-top: 5px;
+    align-items: center;
 
 }
 nav ul{
@@ -43,4 +44,8 @@ nav ul li a{
     font-size: 1.5rem;
     color: black;
 }
+nav .iconoCarrito{
+    height: 40px;
+    width: 40px;
+    }
 
