@@ -1,0 +1,21 @@
+.ItemCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnItemCount{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(136, 135, 123, 0.233);
+    border-color: rgba(136, 135, 123, 0.233);
+    border-radius: 2px;
+    height: fit-content;
+    margin: 0 0.5rem;
+}
+
+.count{
+    padding: 0 1rem;
+    background-color: rgba(136, 135, 123, 0.123);
+    border-radius: 2px;
+}
