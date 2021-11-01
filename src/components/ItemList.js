@@ -17,13 +17,11 @@ const ItemList = () => {
 
         console.log(product)
     
-    }
-    )
-    
+    },[])    
 
     return (
         <> 
-        {product.map((prod) => Item (prod={product}))}
+        {product.map((prod) => <Item prod={prod}/>)}
         </>
     )
     }
