@@ -1,10 +1,11 @@
 import './App.css';
-import ItemCount from './components/ItemCount';
 import NavBar from './components/NavBar.jsx';
 import './css/NavBar.css';
 import './css/ItemCount.css';
 import './css/Item.css';
+import './css/ItemDetail.css';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </header>
       
       <ItemListContainer/>
+      <ItemDetailContainer/>
 
     </div>
   );

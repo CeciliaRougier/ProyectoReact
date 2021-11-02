@@ -8,11 +8,12 @@
 .btnItemCount{
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(136, 135, 123, 0.233);
-    border-color: rgba(136, 135, 123, 0.233);
+    background-color: #6466564f;
+    border: none;
     border-radius: 2px;
     height: fit-content;
     margin: 0 0.5rem;
+    height: 1.5rem;
 }
 
 .count{

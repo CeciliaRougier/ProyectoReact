@@ -17,7 +17,7 @@ const ItemList = () => {
 
         console.log(product)
     
-    },[])    
+    })    
 
     return (
         <> 

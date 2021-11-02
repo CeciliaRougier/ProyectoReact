@@ -30,7 +30,7 @@ function ItemCount({stock, initial }){
             <button onClick={restar} className="btnItemCount"> - </button>
             <p className="count">{count}</p>
             <button onClick={sumar}  className="btnItemCount"> + </button>
-            <button onClick={agregarCarrito} className="btnItemCount">Agregar al carrito</button>
+            <button onClick={agregarCarrito} className="btnItemCount">Agregar</button>
         </div>
     )
 }

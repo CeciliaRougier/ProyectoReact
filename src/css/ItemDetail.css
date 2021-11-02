@@ -1,0 +1,7 @@
+.detalle-item{
+    background-color: rgba(95, 158, 160, 0.356);
+    width: 30%;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 1rem;
+}

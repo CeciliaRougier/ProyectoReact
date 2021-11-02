@@ -1,5 +1,6 @@
 import CartWidget from "./CartWidget.js";
 
+
 //Escribo la función NavBar
 function NavBar() {
     return (
