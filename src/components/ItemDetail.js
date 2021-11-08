@@ -10,9 +10,6 @@ const ItemDetail = (prod) => {
                 <img src={prod.prod.foto} alt='imagen' />
             </div>
             <div>
-                ${prod.prod.precio}
-            </div>
-            <div>
                 <p>{prod.prod.description}</p>
             </div>
 

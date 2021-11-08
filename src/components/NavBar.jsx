@@ -9,11 +9,11 @@ function NavBar() {
             <ul>
                 <li className="btnNBItem"><Link to='/'>Brand</Link></li>
                 <li className="btnNBItem"><Link to='/'>Inicio</Link></li>
-                <li className="btnNBItem"><Link to='/category/:cat1'>Categoría 1</Link></li>
-                <li className="btnNBItem"><Link to='/category/:cat2'>Categoría 2</Link></li>
-                <li className="btnNBItem"><Link to='/cart'>{CartWidget}</Link></li>
+                <li className="btnNBItem"><Link to='/category/Categoría 1'>Categoría 1</Link></li>
+                <li className="btnNBItem"><Link to='/category/Categoría 2'>Categoría 2</Link></li>
+                <li className="btnNBItem"><Link to='/cart'><CartWidget/></Link></li>
+
             </ul>
-            <CartWidget />
 
         </nav>
     );

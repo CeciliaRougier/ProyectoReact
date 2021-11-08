@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:1rem;
+    margin:5px;
 }
 
 .btnItemCount{
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #6466564f;
+    background-color: #84b09b57;
     border: none;
     border-radius: 2px;
     height: fit-content;
