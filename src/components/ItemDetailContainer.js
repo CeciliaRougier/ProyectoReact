@@ -5,6 +5,7 @@ import { useEffect, useState } from "react/cjs/react.development";
 import getItem from "./getItem";
 import ItemDetail from "./ItemDetail";
 
+//Busca, a través del ID, los elementos de cada producto
 const ItemDetailContainer = () => {
     const [prod, setProd] = useState({})
     const { id } = useParams()
@@ -13,29 +14,30 @@ const ItemDetailContainer = () => {
 
         if (id) {
             getItem
-            .then((res) => {
-                console.log('Llamada a api')
-                setProd(res.find(prod => prod.id===id))
-            })
-            .finally(() => console.log('Esto se ejecuta'))
+                .then((res) => {
+                    console.log('Llamada a api')
+                    setProd(res.find(prod => prod.id === id))
+                })
+                .finally(() => console.log('Esto se ejecuta'))
 
-        console.log(prod)
-        }else {
+            console.log(prod)
+        } else {
             getItem
-            .then((res) => {
-                console.log('Llamada a api')
-                setProd(res)
-            })
-            .finally(() => console.log('Esto se ejecuta'))
+                .then((res) => {
+                    console.log('Llamada a api')
+                    setProd(res)
+                })
+                .finally(() => console.log('Esto se ejecuta'))
 
-        console.log(prod)
+            console.log(prod)
         }
-    
-    },)    
 
+    })
+
+    //Muestra los elementos de cada producto
     return (
         <>
-        {prod && <ItemDetail prod={prod}/>}
+            {prod && <ItemDetail prod={prod} />}
         </>
     )
 }

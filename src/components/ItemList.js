@@ -14,7 +14,7 @@ const ItemList = () => {
         if (id) {
             getFetch
                 .then((res) => {
-                    setProduct(res.filter(prod => prod.category=== id))
+                    setProduct(res.filter(prod => prod.category === id))
                 })
                 .finally(() => console.log('Esto se ejecuta si o si'))
 
@@ -35,11 +35,10 @@ const ItemList = () => {
 
     return (
         <>
-        {loading ? <h1>Cargando...</h1>:
-        product.map((prod) => <Item prod={prod} />)
-        
-        }
-            
+            {loading ? <h1>Cargando...</h1> :
+                product.map((prod) => <Item prod={prod} />)
+            }
+
         </>
     )
 }

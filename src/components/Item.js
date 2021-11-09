@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+
+//Item que trae la información de cada producto
 function Item(prod) {
     return (
         <div key={prod.prod.id} className="card">
@@ -15,10 +17,10 @@ function Item(prod) {
 
             <div className="card-footer">
                 <Link to={`/item/${prod.prod.id}`}>
-                DETALLE DEL PRODUCTO
+                    DETALLE DEL PRODUCTO
                 </Link>
             </div>
-            
+
         </div>
     );
 }

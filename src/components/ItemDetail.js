@@ -1,23 +1,21 @@
 
 import React, { useState } from "react";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 
+//Función que se ejecuta al apretar en "Detalles del producto"
+function ItemDetail(prod) {
 
-const ItemDetail = (prod) => {
+    const [cambiarBoton, setCambiarBoton] = useState(false);
 
-    const [ count, setCount] = useState (0)
-    //Función al apretar Agregar
-    // const clickOnAdd = (total) => {
-    //     alert(`La cantidad agregada es de ${total} unidades.`)
-    //     setCount(total)
-    // }
-    // console.log(count)
-
+    const [count, setCount] = useState(0);
     const onAdd = (cant) => {
-        setCount(cant)
-    }
-    console.log(count)
+        setCount(cant);
+        setCambiarBoton(true);
+    };
+    console.log(count);
+
     return (
         <div key={prod.prod.id} className="detalle-item">
             <h2>Detalle del Item: {prod.prod.title}</h2>
@@ -28,10 +26,17 @@ const ItemDetail = (prod) => {
                 <p>{prod.prod.description}</p>
             </div>
 
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+            {/* Al agregar "Apretar" cambia el botón a "Terminar la compra" */}
+            {cambiarBoton ?
+                //El botón "Terminar la compra" me lleva a Cart
+                <Link to='/cart'>
+                    <button className="btnItemCount">Terminar la compra</button>
+                </Link>
+                :
+                <ItemCount stock={5} initial={1} onAdd={onAdd} />}
 
         </div>
-    )
+    );
 }
 
 export default ItemDetail
