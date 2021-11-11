@@ -1,0 +1,20 @@
+.card-cart{
+    background-color: #84b09b62;
+    margin: 10px 20%;
+    padding: 10px;
+    display: inline-block;
+}
+.card-cart label{
+    margin: 20px 30px;
+}
+.foto-prod-cart{
+    width: 50%;
+}
+.producto-titulo{
+    font-weight: bold;
+    font-size: 30px;
+}
+.btn-clearcarrito{
+    display: block;
+    margin: 10px auto;
+}
